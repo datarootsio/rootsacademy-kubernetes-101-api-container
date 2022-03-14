@@ -3,7 +3,7 @@ import pprint
 import os
 
 from flask import Flask, jsonify
-from flask_restplus import Resource, Api
+from flask_restx import Resource, Api
 from werkzeug.middleware.proxy_fix import ProxyFix
 from werkzeug.exceptions import BadRequest
 from google.cloud import bigquery
