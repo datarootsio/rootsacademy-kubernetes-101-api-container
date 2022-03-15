@@ -1,7 +1,7 @@
-FROM python:3.8
+FROM --platform=linux/amd64 python:3.8
 
 # Copy function code
-COPY ["main.py", "wsgi.py", "requirements.txt", "entrypoint.sh", "./"]
+COPY . .
 
 RUN pip install -r requirements.txt
 
