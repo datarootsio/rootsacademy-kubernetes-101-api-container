@@ -11,7 +11,7 @@ from google.cloud import bigquery
 app = Flask(__name__)
 
 VERSION = os.getenv("VERSION", "0.0.1")
-PROJECT_ID = os.getenv("PROJECT_ID", "rootsacademy-reference")
+PROJECT_ID = os.getenv("PROJECT_ID", "rootsacademy")
 MAX_TWEETS = int(os.getenv("MAX_TWEETS", 10))
 STUDENT = os.getenv("STUDENT", "reference")
 
